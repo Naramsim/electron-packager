@@ -59,12 +59,12 @@ foobar
 When one runs the following command for the first time in the `foobar` directory:
 
 ```
-electron-packager . FooBar --platform=darwin --arch=x64 --version=0.28.2
+electron-packager . FooBar --platform=darwin --arch=x64 --version=0.34.2
 ```
 
 `electron-packager` will do the following:
 
-* downloads Electron 0.28.2 for OS X on x64 (and caches the download in `~/.electron`)
+* downloads Electron 0.34.2 for OS X on x64 (and caches the download in `~/.electron`)
 * builds the OS X `FooBar.app`
 * places `FooBar.app` in `foobar/FooBar-darwin-x64/` (since an `out` directory was not specified)
 
@@ -122,7 +122,7 @@ packager(opts, function done (err, appPath) { })
 
 `version` - *String*
 
-  Electron version (without the 'v') - for example, [`0.33.9`](https://github.com/atom/electron/releases/tag/v0.33.9). See [Electron releases](https://github.com/atom/electron/releases) for valid versions.
+  Electron version (without the 'v') - for example, [`0.34.2`](https://github.com/atom/electron/releases/tag/v0.34.2). See [Electron releases](https://github.com/atom/electron/releases) for valid versions.
 
 **Optional**
 
@@ -155,7 +155,7 @@ packager(opts, function done (err, appPath) { })
 
   - OS X: `.icns`
   - Windows: `.ico` ([See below](#building-windows-apps-from-non-windows-platforms) for details on on-Windows platforms)
-  - Linux: this option is not required, as the dock/window list icon is set via [the icon option in the BrowserWindow contructor](http://electron.atom.io/docs/v0.30.0/api/browser-window/#new-browserwindow-options). Setting the icon in the file manager is not currently supported.
+  - Linux: this option is not required, as the dock/window list icon is set via [the icon option in the BrowserWindow contructor](http://electron.atom.io/docs/v0.34.2/api/browser-window/#new-browserwindow-options). Setting the icon in the file manager is not currently supported.
 
 If the file extension is omitted, it is auto-completed to the correct extension based on the platform, including when `--platform=all` is in effect.
 
